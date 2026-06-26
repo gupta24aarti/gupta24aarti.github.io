@@ -1,13 +1,13 @@
 /* ============ DESIGN TOKENS ============ */
 :root {
-  --bg: #0b0d12;
-  --bg-alt: #11141b;
-  --surface: #161a23;
-  --border: #232834;
-  --text: #e9ecf2;
-  --muted: #9aa3b2;
+  --bg: #0a1024;
+  --bg-alt: #0e1733;
+  --surface: #141d3c;
+  --border: #243156;
+  --text: #eaf0ff;
+  --muted: #9fb0d4;
   --accent: #5b8cff;
-  --accent-2: #7c5bff;
+  --accent-2: #6ea8ff;
   --radius: 16px;
   --container: 1120px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -19,7 +19,10 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: "Inter", system-ui, -apple-system, sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(1000px 700px at 50% -5%, rgba(91, 140, 255, 0.18), transparent 60%),
+    linear-gradient(180deg, #0c1530 0%, #0a1024 55%, #080d1e 100%);
+  background-attachment: fixed;
   color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
